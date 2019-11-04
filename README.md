@@ -4,8 +4,8 @@
 
 This repo hosts the data and code for our American Voter bot, a Twitter account that tweets out profiles of real American voters every hour, every day (and it will keep going until ~2036).
 
-- `ccesbot112117.R` cleans and wrangles data from the Cooperative Congressional Election Study and generates the profiles the bot will inject
--  `CCES_ANNOTATED.csv` are the profiles exported by `ccesbot112117.R`
+- `ccesbot031618.R` cleans and wrangles data from the Cooperative Congressional Election Study and generates the profiles the bot will inject
+-  `CCES_ANNOTATED.csv` are the profiles exported by `ccesbot031618.R`
 - `bot.py` is the actual Python script that tweets out the random voter biographies
 - `index.txt` is a list of keys so the bot knows which profiles it has already tweeted out and doesn't post repeats
 
