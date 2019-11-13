@@ -184,7 +184,7 @@ lapply(names(full_data)[4:18],
            arrange(desc(prop))
        })
 
-# weighted rnadom selection and profile generation ------------------------
+# weighted random selection and profile generation ------------------------
 # function for sampling and making response
 create_profile <- function(df, row_index){
   # get a row via weighted sampling
@@ -234,7 +234,7 @@ full_data <- full_data %>%
 # go
 num_cores <- max(1,parallel::detectCores()-1)
 
-# do the loop in parallel -- shouldn't take more than 10-15 minutes with 7 cores
+# do the loop in parallel -- shouldn't take more than a minute with 7 cores
 parallel_output <- pblapply(1:nrow(full_data),
                             cl=num_cores,
                             function(x){
